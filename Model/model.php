@@ -1,6 +1,6 @@
 <?php
 
-function afegirUsuari(){
+function afegirUsuari($nom, $telefon, $adreca, $sexe, $adreca_electronica, $dni, $codi_postal){
     require "../Database/connexio.php";
 
     try {
