@@ -62,12 +62,12 @@ function rellotge(ara) {
     html += anyTraspas(ara);
    
     return html;
-    function clock() {
-        document.getElementById('data').innerHTML = rellotge(new Date());
-    }
-    
-    function init() {
-        clock();
-        setInterval(clock, 1000);
-    }
+}
+function clock() {
+    document.getElementById('data').innerHTML = rellotge(new Date());
+}
+
+function init() {
+    clock();
+    setInterval(clock, 1000);
 }
