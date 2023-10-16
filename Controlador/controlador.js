@@ -1,5 +1,3 @@
-// Retorna un missatge especial si és un any de traspàs
-//    i 1 de gener o 29 de febrer a les 8:00h
 function anyTraspas(ara) {
     let any = ara.getFullYear();
     let mes = ara.getMonth() + 1;
@@ -16,9 +14,7 @@ function anyTraspas(ara) {
     return "";
 }
 
-// Retorna un text HTML amb la data, hora i un missatge en dates i hores especials
 function rellotge(ara) {
-    //const DIES = ["Diumenge", "Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte"];
     let html;
     let ampm = "AM";
     let dia = ara.getDate();
@@ -28,7 +24,7 @@ function rellotge(ara) {
     let segon = ara.getSeconds();
     let missatge = "";
    
-    // Hora
+
     if (minut == 0) {
         if (hora == 12) missatge = "<br>Són les 12 del migdia. Tens una hora per anar a dinar.";
         else if (hora == 0) {
@@ -46,18 +42,10 @@ function rellotge(ara) {
     if (segon < 10) segon = "0" + segon;
     html = hora + ":" + minut + ":" + segon + " " + ampm;
    
-    // Data
-    //html += "<br>" + DIES[ara.getDay()] + "<br>" + ara.getDate() + " / " + (ara.getMonth()+1) + " / " + ara.getFullYear();
-
-    // Mostrarà el dia en l'idioma del navegador
-    //var ds = ara.toLocaleDateString(navigator.language, { weekday: 'long' });
-   
-    // Mostrarà el dia en català
     let ds = ara.toLocaleDateString("ca", { weekday: 'long' });
     ds = ds.charAt(0).toUpperCase() + ds.substring(1);
     html += "<br>" + ds + "<br>" + ara.getDate() + " / " + (ara.getMonth()+1) + " / " + ara.getFullYear();
    
-    // Missatges
     html += missatge;
     html += anyTraspas(ara);
    
@@ -70,4 +58,8 @@ function clock() {
 function init() {
     clock();
     setInterval(clock, 1000);
+}
+fu
+function compDNI(){
+
 }

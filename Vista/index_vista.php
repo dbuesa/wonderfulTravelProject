@@ -10,7 +10,7 @@
 <body onload="init()">
     <div id="data" class="datahora"></div><br><br>
     <h2>Wonderful Travel</h2>
-    <form>
+    <form action="/Controlador/controlador.php" method="GET">
         <label for="data">Data:</label>
         <input type="date" id="data" name="data" required><br><br>
 
@@ -51,9 +51,10 @@
         </select><br><br>
 
         <label for="numPersones">Persones:</label>
-        <input type="number" id="numPersones" name="numPersones" min="0" required><br><br>
+        <input type="number" id="numPersones" name="numPersones" min="1" max="512" required><br><br>
 
-        <input type="submit" value="Afegir">
+        <input type="submit" value="Afegir" onclick="benito()">
+        <?php include "../Controlador/controlador.php"?>
     </form>
 </body>
 </html>
