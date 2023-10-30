@@ -59,7 +59,3 @@ function init() {
     clock();
     setInterval(clock, 1000);
 }
-fu
-function compDNI(){
-
-}
