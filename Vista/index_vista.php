@@ -34,7 +34,7 @@
         <input type="text" id="cp" name="cp" required><br><br>
 
         <label for="dni">DNI</label>
-        <input type="text" id="cp" name="cp" required><br><br>
+        <input type="text" id="dni" name="dni" required><br><br>
 
         <label for="direccio">Direcció:</label>
         <input type="text" id="direccio" name="direccio" required><br><br>
