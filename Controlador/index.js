@@ -82,7 +82,9 @@ function carregarPreu(){
     let numPersones = document.getElementById("numPersones").value;
     let preuTotal = preus[ciutat] * numPersones;
     let pt = parseFloat(preuTotal).toFixed(2);
+    if(pt !== "NaN"){
     document.getElementById("preu").value = pt + " €";
+    }
 }
 
 

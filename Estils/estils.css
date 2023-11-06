@@ -32,3 +32,57 @@ stroke: white;
   stroke-linecap: round;
   transform-origin: center;
 }
+
+
+/* Estilos generales */
+body {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #000000; /* Texto negro */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del formulario */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco */
+  border: 1px solid #000000; /* Borde negro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo de etiquetas y campos de entrada */
+label, input, select {
+  display: block;
+  margin: 2px 0;
+}
+
+/* Estilo del div de imágenes de ciudades */
+#imatge {
+  max-width: 350px;
+  max-height: 250px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px; /* Espacio a la izquierda del input de ciudades */
+}
+
+/* Estilo de los botones */
+input[type="submit"] {
+  background-color: #000000; /* Fondo negro */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo de los botones cuando se pasa el cursor por encima */
+input[type="submit"]:hover {
+  background-color: #333333; /* Fondo gris oscuro */
+}
+
+.left {
+  width: 50%;
+  float: left;
+}
