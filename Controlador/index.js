@@ -1,3 +1,26 @@
+const imatges = {
+    "Praga": "../Imatges/praga.webp",
+    "Madrid": "../Imatges/madrid.webp",
+    "Amsterdam": "../Imatges/amsterdam.webp",
+    "Atenas": "../Imatges/atenas.webp",
+    "Kampala": "../Imatges/kampala.jpg",
+    "Abuja": "../Imatges/abuja.jpg",
+    "Brazzaville": "../Imatges/brazzaville.jpg",
+    "Algeria": "../Imatges/algeria.jpg",
+    "Rio de Janeiro": "../Imatges/riodejaneiro.webp",
+    "Buenos Aires": "../Imatges/Buenos-Aires.jpg",
+    "Bogotà": "../Imatges/bogota.jpg",
+    "Cusco": "../Imatges/cusco.jpg",
+    "Sydney": "../Imatges/sydney.jpg",
+    "Wellington": "../Imatges/wellington.jpg",
+    "Wagga Wagga": "../Imatges/wagga.jpg",
+    "Hobart": "../Imatges/hobart.jpg",
+    "Dacca": "../Imatges/dacca.jpg",
+    "Hong Kong": "../Imatges/hongkong.webp",
+    "Jakarta": "../Imatges/jakarta.jpg",
+    "Canton": "../Imatges/canton.jpg"
+}
+
 const preus = {
     "Praga": 199.99,
     "Madrid": 299.99,
@@ -32,6 +55,7 @@ const continents = {
 document.getElementById("desti").addEventListener("change", carregarContinents);
 document.getElementById("numPersones").addEventListener("change", carregarPreu);
 document.getElementById("ciutat").addEventListener("change", carregarPreu);
+document.getElementById("ciutat").addEventListener("change", carregarImatge);
 
 
 function carregarContinents(){
@@ -58,4 +82,11 @@ function carregarPreu(){
     let preuTotal = preus[ciutat] * numPersones;
     let pt = parseFloat(preuTotal).toFixed(2);
     document.getElementById("preu").value = pt + " €";
+}
+
+
+function carregarImatge(){
+    let ciutat = document.getElementById("ciutat").value;
+    let imatge = imatges[ciutat];
+    document.getElementById("imatge").src = imatge;
 }
