@@ -10,7 +10,7 @@
 <body onload="init()">
     <div id="data" class="datahora"></div><br><br>
     <h2>Wonderful Travel</h2>
-    <form action="../Controlador/controlador.php" method="POST">
+    <form action="Controlador/controlador.php" method="POST">
         <label for="data">Data:</label>
         <input type="date" id="data" name="data" required><br><br>
 
