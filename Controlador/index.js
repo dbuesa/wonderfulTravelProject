@@ -1,19 +1,23 @@
-function generarContinents(){
-    const continents = ["Africa", "America", "Asia", "Europa", "Oceania"];
-    let html = "";
-    for (let i = 0; i < continents.length; i++) {
-        html += `<option value="${continents[i]}">${continents[i]}</option>`;
+function continents(){
+    const continents = {
+        "Europa": ["Praga", "Madrid", "Amsterdam", "Atenas"],
+        "Àfrica": ['Kampala', 'Abuja', 'Brazzaville', 'Algeria'],
+        "Amèrica": ['Rio de Janeiro', 'Buenos Aires', 'Bogotà', 'Cusco'],
+        "Oceania": ['Sydney', 'Wellington', 'Wagga Wagga', 'Hobart'],
+        "Àsia": ['Dacca', 'Hong Kong', 'Jakarta', 'Canton']
     }
-    return html;
+    let continent = document.getElementById("desti").value;
+    let ciutats = continents[continent];
+    carregarCiutats(ciutats);
 }
 
-
-function mostrarCiutats(){
-    const continent = document.getElementById("continent").value;
-    const ciutats = ciutatsPerContinents[continent];
-    let html = "";
+function carregarCiutats(ciutats){
+    let select = document.getElementById("ciutat");
+    select.innerHTML = "";
     for (let i = 0; i < ciutats.length; i++) {
-        html += `<option value="${ciutats[i]}">${ciutats[i]}</option>`;
+        let option = document.createElement("option");
+        option.value = ciutats[i];
+        option.innerHTML = ciutats[i];
+        select.appendChild(option);
     }
-    document.getElementById("ciutats").innerHTML = html;
 }
