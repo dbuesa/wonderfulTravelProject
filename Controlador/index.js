@@ -37,6 +37,7 @@ function carregarContinents(){
     let continent = document.getElementById("desti").value;
     let ciutats = continents[continent];
     mostrarCiutats(ciutats);
+    carregarPreu();
 }
 
 
@@ -55,5 +56,5 @@ function carregarPreu(){
     let numPersones = document.getElementById("numPersones").value;
     let preuTotal = preus[ciutat] * numPersones;
     let pt = parseFloat(preuTotal).toFixed(2);
-    document.getElementById("preu").value = pt + "€";
+    document.getElementById("preu").value = pt + " €";
 }
