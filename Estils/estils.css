@@ -1,38 +1,34 @@
 .clock {
-    margin: 0px auto;
-    width: 150px;
-    height: 150px;
-    float: left;
-  }
-
-  circle {
-    fill: #fabada;
-  }
-  
+  margin: 0px auto;
+  width: 150px;
+  height: 150px;
+  float: right;
+}
 .hours,
 .minutes,
 .seconds {
-  transform-origin: center;
-  stroke-linecap: round;
+transform-origin: center;
+stroke-linecap: round;
+
 }
 
 .hours {
-  stroke: fuchsia;
-  stroke-width: 3px;
-  transition: transform 1s ease-in-out;
+stroke: fuchsia;
+stroke-width: 3px;
+transition: transform 1s ease-in-out;
 }
 .minutes {
-  stroke-width: 2px;
-  stroke: lime;
-  transition: transform 1s ease-in-out;
+stroke-width: 2px;
+stroke: lime;
+transition: transform 1s ease-in-out;
 }
 .seconds {
-  stroke: white;
+stroke: white;
 }
 
 .line {
-    stroke-width: 1px;
-    stroke: white;
-    stroke-linecap: round;
-    transform-origin: center;
-  }
+  stroke-width: 1px;
+  stroke: white;
+  stroke-linecap: round;
+  transform-origin: center;
+}
