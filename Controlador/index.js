@@ -16,9 +16,9 @@ function continents(){
 
 function mostrarCiutats(ciutats){
     let select = document.getElementById("ciutat");
-    for (let ciutat of ciutats){
+    for(let i=0; i<ciutats.length; i++){
         let option = document.createElement("option");
-        option.innerHTML = ciutat;
+        option.innerHTML = ciutats[i];
         select.appendChild(option);
     }
 }
