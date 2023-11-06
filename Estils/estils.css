@@ -1,12 +1,14 @@
 .clock {
     margin: 0px auto;
-    width: 650px;
-    height: 650px;
+    width: 150px;
+    height: 150px;
+    align-items: right;
   }
 
   circle {
     fill: #fabada;
   }
+  
 .hours,
 .minutes,
 .seconds {
