@@ -54,7 +54,6 @@ function mostrarCiutats(ciutats) {
 function carregarPreu(){
     let ciutat = document.getElementById("ciutat").value;
     let numPersones = document.getElementById("numPersones").value;
-    document.getElementById("preu").value = preus[ciutat].toFixed(2) + " €";
     let preuTotal = preus[ciutat] * numPersones;
     let pt = parseFloat(preuTotal).toFixed(2);
     document.getElementById("preu").value = pt + " €";
