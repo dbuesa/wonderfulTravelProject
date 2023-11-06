@@ -30,7 +30,7 @@ const continents = {
 }
 
 document.getElementById("desti").addEventListener("change", carregarContinents);
-document.getElementById("preu").addEventListener("change", carregarPreu);
+document.getElementById("numPersones").addEventListener("change", carregarPreu);
 
 
 function carregarContinents(){
@@ -54,5 +54,6 @@ function carregarPreu(){
     let ciutat = document.getElementById("ciutat").value;
     let numPersones = document.getElementById("numPersones").value;
     let preuTotal = preus[ciutat] * numPersones;
-    document.getElementById("preu").innerHTML = preuTotal;
+    let pt = parseFloat(preuTotal).toFixed(2);
+    document.getElementById("preu").innerHTML = pt + "€";
 }
