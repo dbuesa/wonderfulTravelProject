@@ -1,4 +1,4 @@
-const imatges = {
+export const imatges = {
     "Praga": "Imatges/praga.webp",
     "Madrid": "Imatges/madrid.webp",
     "Amsterdam": "Imatges/amsterdam.webp",
@@ -21,7 +21,7 @@ const imatges = {
     "Canton": "Imatges/canton.jpg"
 }
 
-const preus = {
+export const preus = {
     "Praga": 199.99,
     "Madrid": 299.99,
     "Amsterdam": 499.99,
@@ -44,7 +44,7 @@ const preus = {
     "Canton": 1999.99
 }
 
-const continents = {
+export const continents = {
     "europa": ["Praga", "Madrid", "Amsterdam", "Atenas"],
     "africa": ['Kampala', 'Abuja', 'Brazzaville', 'Algeria'],
     "america": ['Rio de Janeiro', 'Buenos Aires', 'Bogotà', 'Cusco'],
