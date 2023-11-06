@@ -30,7 +30,7 @@ const continents = {
 }
 
 document.getElementById("desti").addEventListener("change", carregarContinents);
-document.getElementById("numPersones").addEventListener("change", carregarPreu);
+document.getElementById("numPersones").addEventListener("load", carregarPreu);
 
 
 function carregarContinents(){
