@@ -2,13 +2,6 @@ import { imatges } from "./export.js";
 import { preus } from "./export.js";
 import { continents } from "./export.js";
 
-const continents = {
-    "europa": ["Praga", "Madrid", "Amsterdam", "Atenas"],
-    "africa": ['Kampala', 'Abuja', 'Brazzaville', 'Algeria'],
-    "america": ['Rio de Janeiro', 'Buenos Aires', 'Bogotà', 'Cusco'],
-    "oceania": ['Sydney', 'Wellington', 'Wagga Wagga', 'Hobart'],
-    "asia": ['Dacca', 'Hong Kong', 'Jakarta', 'Canton']
-}
 
 document.getElementById("desti").addEventListener("change", carregarContinents);
 document.getElementById("numPersones").addEventListener("change", carregarPreu);
