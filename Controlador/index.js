@@ -1,7 +1,7 @@
 document.getElementById("desti").addEventListener("change", continents);
 
 function continents(){
-    const continents = {
+    let continents = {
         "Europa": ["Praga", "Madrid", "Amsterdam", "Atenas"],
         "Àfrica": ['Kampala', 'Abuja', 'Brazzaville', 'Algeria'],
         "Amèrica": ['Rio de Janeiro', 'Buenos Aires', 'Bogotà', 'Cusco'],
@@ -10,17 +10,15 @@ function continents(){
     }
     let continent = document.getElementById("desti").value;
     let ciutats = continents[continent];
-    carregarCiutats(ciutats);
+    mostrarCiutats(ciutats);
 }
 
 
-function carregarCiutats(ciutats){
+function mostrarCiutats(ciutats){
     let select = document.getElementById("ciutat");
-    select.innerHTML = "";
-    for (let i = 0; i < ciutats.length; i++) {
+    for (let ciutat of ciutats){
         let option = document.createElement("option");
-        option.value = ciutats[i];
-        option.innerHTML = ciutats[i];
+        option.innerHTML = ciutat;
         select.appendChild(option);
     }
 }
