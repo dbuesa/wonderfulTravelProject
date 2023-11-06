@@ -7,25 +7,30 @@
   circle {
     fill: #fabada;
   }
-
 .hours,
 .minutes,
 .seconds {
   transform-origin: center;
   stroke-linecap: round;
-  stroke-width: 3px;
-}
-.hours {
-  stroke: cyan;
-}
-.minutes {
-  stroke: lime;
-}
-.seconds {
-  stroke: fuchsia;
 }
 
+.hours {
+  stroke: fuchsia;
+  stroke-width: 3px;
+  transition: transform 1s ease-in-out;
+}
 .minutes {
-    stroke: lime;
-    transform: rotate(90deg);
+  stroke-width: 2px;
+  stroke: lime;
+  transition: transform 1s ease-in-out;
+}
+.seconds {
+  stroke: white;
+}
+
+.line {
+    stroke-width: 1px;
+    stroke: white;
+    stroke-linecap: round;
+    transform-origin: center;
   }
