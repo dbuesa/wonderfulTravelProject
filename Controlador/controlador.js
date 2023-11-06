@@ -59,3 +59,13 @@ function init() {
     clock();
     setInterval(clock, 1000);
 }
+
+(function (){
+    calculateHourDegrees();
+    calculateMinuteDegrees();
+    calculateSeconds();
+  })();
+
+  function linearMap(value, min, max, newMin, newMax) {
+    return newMin + ((newMax - newMin) * (value - min)) / (max - min);
+  }

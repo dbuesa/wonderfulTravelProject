@@ -1,0 +1,31 @@
+.clock {
+    margin: 0px auto;
+    width: 650px;
+    height: 650px;
+  }
+
+  circle {
+    fill: #fabada;
+  }
+
+.hours,
+.minutes,
+.seconds {
+  transform-origin: center;
+  stroke-linecap: round;
+  stroke-width: 3px;
+}
+.hours {
+  stroke: cyan;
+}
+.minutes {
+  stroke: lime;
+}
+.seconds {
+  stroke: fuchsia;
+}
+
+.minutes {
+    stroke: lime;
+    transform: rotate(90deg);
+  }
