@@ -28,7 +28,6 @@ function afegirUsuari($nom, $telefon, $adreca, $sexe, $adreca_electronica, $dni,
 
 }
 
-function afegirReserva()
 
 
 ?>

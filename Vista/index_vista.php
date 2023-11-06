@@ -45,9 +45,9 @@
         <label for="sexe">Sexe:</label>
         <select id="sexe" name="sexe">
             <option value=""></option>
-            <option value="masculi">Masculí</option>
-            <option value="femeni">Femení</option>
-            <option value="nobinari">No binari</option>
+            <option value="Masculí">Masculí</option>
+            <option value="Femení">Femení</option>
+            <option value="No binari">No binari</option>
         </select><br><br>
 
         <label for="numPersones">Persones:</label>
