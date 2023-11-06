@@ -1,24 +1,27 @@
-document.getElementById("desti").addEventListener("change", continents);
+const continents = {
+    "europa": ["Praga", "Madrid", "Amsterdam", "Atenas"],
+    "africa": ['Kampala', 'Abuja', 'Brazzaville', 'Algeria'],
+    "america": ['Rio de Janeiro', 'Buenos Aires', 'Bogotà', 'Cusco'],
+    "oceania": ['Sydney', 'Wellington', 'Wagga Wagga', 'Hobart'],
+    "asia": ['Dacca', 'Hong Kong', 'Jakarta', 'Canton']
+}
 
-function continents(){
-    let continents = {
-        "Europa": ["Praga", "Madrid", "Amsterdam", "Atenas"],
-        "Àfrica": ['Kampala', 'Abuja', 'Brazzaville', 'Algeria'],
-        "Amèrica": ['Rio de Janeiro', 'Buenos Aires', 'Bogotà', 'Cusco'],
-        "Oceania": ['Sydney', 'Wellington', 'Wagga Wagga', 'Hobart'],
-        "Àsia": ['Dacca', 'Hong Kong', 'Jakarta', 'Canton']
-    }
+document.getElementById("desti").addEventListener("change", carregarContinents);
+
+
+function carregarContinents(){
     let continent = document.getElementById("desti").value;
     let ciutats = continents[continent];
     mostrarCiutats(ciutats);
 }
 
 
-function mostrarCiutats(ciutats){
-    let select = document.getElementById("ciutat");
-    for(let i=0; i<ciutats.length; i++){
+function mostrarCiutats(ciutats) {
+    let ciutatsSelect = document.getElementById("ciutat");
+    ciutatsSelect.innerHTML = "";
+    for (let i = 0; i < ciutats.length; i++) {
         let option = document.createElement("option");
-        option.innerHTML = ciutats[i];
-        select.appendChild(option);
+        option.text = ciutats[i];
+        ciutatsSelect.add(option);
     }
 }
