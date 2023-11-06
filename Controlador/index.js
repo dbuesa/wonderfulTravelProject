@@ -37,7 +37,6 @@ function carregarContinents(){
     let continent = document.getElementById("desti").value;
     let ciutats = continents[continent];
     mostrarCiutats(ciutats);
-    carregarPreu();
 }
 
 
@@ -49,6 +48,7 @@ function mostrarCiutats(ciutats) {
         option.text = ciutats[i];
         ciutatsSelect.add(option);
     }
+    carregarPreu();
 }
 
 function carregarPreu(){
