@@ -1,24 +1,24 @@
 const imatges = {
-    "Praga": "../Imatges/praga.webp",
-    "Madrid": "../Imatges/madrid.webp",
-    "Amsterdam": "../Imatges/amsterdam.webp",
-    "Atenas": "../Imatges/atenas.webp",
-    "Kampala": "../Imatges/kampala.jpg",
-    "Abuja": "../Imatges/abuja.jpg",
-    "Brazzaville": "../Imatges/brazzaville.jpg",
-    "Algeria": "../Imatges/algeria.jpg",
-    "Rio de Janeiro": "../Imatges/riodejaneiro.webp",
-    "Buenos Aires": "../Imatges/Buenos-Aires.jpg",
-    "Bogotà": "../Imatges/bogota.jpg",
-    "Cusco": "../Imatges/cusco.jpg",
-    "Sydney": "../Imatges/sydney.jpg",
-    "Wellington": "../Imatges/wellington.jpg",
-    "Wagga Wagga": "../Imatges/wagga.jpg",
-    "Hobart": "../Imatges/hobart.jpg",
-    "Dacca": "../Imatges/dacca.jpg",
-    "Hong Kong": "../Imatges/hongkong.webp",
-    "Jakarta": "../Imatges/jakarta.jpg",
-    "Canton": "../Imatges/canton.jpg"
+    "Praga": "Imatges/praga.webp",
+    "Madrid": "Imatges/madrid.webp",
+    "Amsterdam": "Imatges/amsterdam.webp",
+    "Atenas": "Imatges/atenas.webp",
+    "Kampala": "Imatges/kampala..jpg",
+    "Abuja": "Imatges/abuja.jpg",
+    "Brazzaville": "Imatges/brazzaville.jpg",
+    "Algeria": "Imatges/algeria.jpg",
+    "Rio de Janeiro": "Imatges/riodejaneiro.webp",
+    "Buenos Aires": "Imatges/Buenos-Aires.jpg",
+    "Bogotà": "Imatges/bogota.jpg",
+    "Cusco": "Imatges/cusco.jpg",
+    "Sydney": "Imatges/sydney.jpg",
+    "Wellington": "Imatges/wellington.jpg",
+    "Wagga Wagga": "Imatges/wagga.jpg",
+    "Hobart": "Imatges/hobart.jpg",
+    "Dacca": "Imatges/dacca.jpg",
+    "Hong Kong": "Imatges/hongkong.webp",
+    "Jakarta": "Imatges/jakarta.jpg",
+    "Canton": "Imatges/canton.jpg"
 }
 
 const preus = {
@@ -62,6 +62,7 @@ function carregarContinents(){
     let continent = document.getElementById("desti").value;
     let ciutats = continents[continent];
     mostrarCiutats(ciutats);
+    carregarImatge();
 }
 
 
