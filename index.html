@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Estils/estils.css">
     <script defer src="Controlador/controlador.js"></script>
+    <script defer src="Controlador/indes.js"></script>
     <title>Wonderful Travel</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
 
         <label for="desti">Destí:</label>
         <select name="desti" id="desti">
-            <option value=""></option>
+            <option value="continent" disabled selected>Selecciona un continent</option>
             <option value="europa">Europa</option>
             <option value="africa">Àfrica</option>
             <option value="america">Amèrica</option>
@@ -38,7 +39,8 @@
         </select><br><br>
         
         <select name="ciutat" id="ciutat">
-        </select>
+          <option value="ciutat" disabled selected>Selecicona una ciutat</option>
+        </select><br><br>
 
         <label for="preu">Preu:</label>
         <input type="text" id="preu" name="preu" readonly><br><br>

@@ -1,3 +1,5 @@
+document.getElementById("desti").addEventListener("change", continents);
+
 function continents(){
     const continents = {
         "Europa": ["Praga", "Madrid", "Amsterdam", "Atenas"],
@@ -10,6 +12,7 @@ function continents(){
     let ciutats = continents[continent];
     carregarCiutats(ciutats);
 }
+
 
 function carregarCiutats(ciutats){
     let select = document.getElementById("ciutat");
