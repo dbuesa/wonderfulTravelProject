@@ -39,6 +39,7 @@ body {
   background-color: #ffffff; 
   color: #000000; 
   font-family: Arial, sans-serif;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
@@ -80,8 +81,20 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input[type="reset"] {
+  background-color: #000000; 
+  color: #ffffff; 
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
 
 input[type="submit"]:hover {
+  background-color: #333333; 
+}
+
+input[type="reset"]:hover {
   background-color: #333333; 
 }
 
@@ -96,8 +109,9 @@ input[type="submit"]:hover {
 }
 
 #imatge {
-  max-width: 350px;
-  max-height: 250px;
+  max-width: 400px;
+  max-height: 2700px;
   display: inline-block;
   vertical-align: top;
+  border-radius: 0.5cm;
 }

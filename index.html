@@ -63,44 +63,47 @@
     </div>
     <br>
     <div id="imatge-container">
-      <img src="Imatges/viaje.jpg" id="imatge" width="350px" height="250px">
+      <img src="Imatges/viaje.jpg" id="imatge" width="400px" height="250px">
     </div><br>
     </div>
     <div class="left">
       <label for="numPersones">Persones:</label>
-      <input type="number" id="numPersones" name="numPersones" min="1" max="512" required><br>
+      <input style="width:18em" type="number" id="numPersones" name="numPersones" min="1" max="512" required><br>
 
       <label for="preu">Preu:</label>
-      <input type="text" id="preu" name="preu" readonly><br>
+      <input style="width:18em" type="text" id="preu" name="preu" readonly><br>
 
 
       <label for="nom">Nom:</label>
-      <input type="text" id="nom" name="nom" required><br>
+      <input style="width:18em" type="text" id="nom" name="nom" placeholder="Pere Pi" required><br>
 
       <label for="cp">Codi postal:</label>
-      <input type="text" id="cp" name="cp" required><br>
+      <input style="width:18em" type="text" id="cp" name="cp" placeholder="08490" required><br>
     </div>
     <label for="dni">DNI</label>
-    <input type="text" id="dni" name="dni" required><br>
+    <input style="width:18em" type="text" id="dni" name="dni" placeholder="12345678A" required><br>
 
     <label for="direccio">Direcció:</label>
-    <input type="text" id="direccio" name="direccio" required><br>
+    <input style="width:18em" type="text" id="direccio" name="direccio" placeholder="Carrer Vilar Petit núm. 23" required><br>
 
     <label for="correu">Correu electrònic:</label>
-    <input type="email" id="correu" name="correu" required><br>
+    <input style="width:18em" type="email" id="correu" name="correu" placeholder="p.pi@sapalomera.cat" required><br>
 
     <label for="sexe">Sexe:</label>
-    <select id="sexe" name="sexe">
+    <select style="width:18em" id="sexe" name="sexe">
       <option value=""></option>
       <option value="Masculí">Masculí</option>
       <option value="Femení">Femení</option>
       <option value="No binari">No binari</option>
     </select><br><br>
 
-    <label for="descompte">Descompte</label>
-    <input type="checkbox" name="descompte" value="Descompte"><br>
+    <label for="descompte"><p style="font-size: x-small; color: red;">15% DE DESCOMPTE (només és aplicable a partir de tres persones)</p></label>
+    <input type="button" name="descompte" id="descompte" value="Aplicar descompte"><br>
 
-    <input type="submit" value="Afegir">
+    <div class="form-inline">
+      <input type="reset" value="Netejar formulari">
+      <input type="submit" value="Afegir reserva">
+    </div>
 
   </form>
 </body>
