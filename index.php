@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Estils/estils.css">
   <script type="module" src="Controlador/index.js"></script>
-  <script defer src="Controlador/controlador.js"></script>
+  <script defer src="Controlador/rellotge.js"></script>
   <title>Wonderful Travel</title>
 </head>
 
