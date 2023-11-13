@@ -39,7 +39,7 @@
     <div class="form-inline">
       <div class="data-field">
         <label for="data">Data:</label>
-        <input type="date" id="data" name="data" required>
+        <input type="date" id="data" name="data" required min=<?php $avui=date("Y-m-d"); echo $avui;?> >
       </div>
 
       <div class="data-field">
