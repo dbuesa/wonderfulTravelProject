@@ -68,7 +68,7 @@
     </div>
     <div class="left">
       <label for="numPersones">Persones:</label>
-      <input style="width:18em" type="number" id="numPersones" name="numPersones" min="1" max="512" required><br>
+      <input style="width:18em" type="number" id="numPersones" name="numPersones" min="1" max="512" value = "1" required><br>
 
       <label for="preu">Preu:</label>
       <input style="width:18em" type="text" id="preu" name="preu" readonly><br>
@@ -91,7 +91,7 @@
 
     <label for="sexe">Sexe:</label>
     <select style="width:18em" id="sexe" name="sexe">
-      <option value=""></option>
+    <option value = "Helicoptero" disabled selected>Helicóptero apache</option>
       <option value="Masculí">Masculí</option>
       <option value="Femení">Femení</option>
       <option value="No binari">No binari</option>
