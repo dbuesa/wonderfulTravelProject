@@ -32,3 +32,86 @@ stroke: white;
   stroke-linecap: round;
   transform-origin: center;
 }
+
+
+
+body {
+  background-color: #ffffff; 
+  color: #000000; 
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; 
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.form-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+label, input, select {
+  display: block;
+  margin: 2px 0;
+}
+
+
+input[type="submit"] {
+  background-color: #000000; 
+  color: #ffffff; 
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: #000000; 
+  color: #ffffff; 
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #333333; 
+}
+
+input[type="reset"]:hover {
+  background-color: #333333; 
+}
+
+.left {
+  width: 50%;
+  float: left;
+}
+
+
+#imatge-container {
+  text-align: center; 
+}
+
+#imatge {
+  max-width: 400px;
+  max-height: 2700px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 0.5cm;
+}
