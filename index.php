@@ -35,7 +35,8 @@
   <div id="data" class="datahora"></div><br><br>
   <h2 style="text-align: center;">Wonderful Travel</h2>
 
-  <form action="Controlador/controlador.php" method="POST">
+  <form  method="POST">
+  <div id="error-container"></div>
     <div class="form-inline">
       <div class="data-field">
         <label for="data">Data:</label>
@@ -104,7 +105,6 @@
       <input type="reset" value="Netejar formulari">
       <input type="submit" value="Afegir reserva">
     </div>
-
   </form>
 </body>
 
