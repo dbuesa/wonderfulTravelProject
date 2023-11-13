@@ -46,17 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
             errors.push("Correu electrònic incorrecte");
         }
         if (errors.length > 0) {
-            mostrarErrores();
+            mostrarErrors();
         } else {
             form.submit();
         }
     });
 });
 
-function mostrarErrores() {
+function mostrarErrors() {
     let html = "";
     for (let error of errors) {
-        html += `<li>${error}</li>`;
+        html += `<li style="font-size: medium; color: red;">${error}</li>`;
     }
     document.getElementById("error-container").innerHTML = html;
 }

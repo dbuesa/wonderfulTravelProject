@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="Estils/estils.css">
   <script type="module" src="Controlador/index.js"></script>
   <script defer src="Controlador/rellotge.js"></script>
+  <script defer src="Controlador/validarDades.js"></script>
   <title>Wonderful Travel</title>
 </head>
 
@@ -35,8 +36,7 @@
   <div id="data" class="datahora"></div><br><br>
   <h2 style="text-align: center;">Wonderful Travel</h2>
 
-  <form  method="POST">
-  <div id="error-container"></div>
+  <form action="Controlador/controlador.php" method="POST">
     <div class="form-inline">
       <div class="data-field">
         <label for="data">Data:</label>
@@ -101,10 +101,12 @@
     <label for="descompte"><p style="font-size: x-small; color: red;">15% DE DESCOMPTE (només és aplicable a partir de tres persones)</p></label>
     <input type="button" name="descompte" id="descompte" value="Aplicar descompte"><br>
 
+    <div id="error-container"></div>
     <div class="form-inline">
       <input type="reset" value="Netejar formulari">
       <input type="submit" value="Afegir reserva">
     </div>
+
   </form>
 </body>
 
