@@ -65,7 +65,7 @@
     </div>
     <br>
     <div id="imatge-container">
-      <img src="Imatges/viaje.jpg" id="imatge" width="400px" height="250px">
+      <img src="Imatges/viaje.webp" id="imatge" width="400px" height="250px">
     </div><br>
     </div>
     <div class="left">
