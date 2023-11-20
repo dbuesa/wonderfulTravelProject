@@ -1,6 +1,7 @@
 <?php
 require "../Model/model.php";
 require "../Utils/utils.php";
+require "../Model/enviarMail.php";
 
 $nom = netejarData($_POST['nom']);
 $adreca = netejarData($_POST['direccio']);
@@ -18,5 +19,6 @@ $preu = netejarData($_POST['preu']);
 
 afegirUsuari($nom, $adreca, $sexe, $adreca_electronica, $dni, $codi_postal);
 afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu);
+enviarMail($adreca_electronica);
 
 ?>      
