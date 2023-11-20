@@ -1,4 +1,15 @@
 <?php
+/** 
+ * afegirUsuari - Afegeix un usuari a la base de dades a partir dels paràmetres que rep de la vista (formulari).
+ *
+ * @param  mixed $nom 
+ * @param  mixed $adreca
+ * @param  mixed $sexe
+ * @param  mixed $adreca_electronica
+ * @param  mixed $dni
+ * @param  mixed $codi_postal
+ * @return void
+ */
 function afegirUsuari($nom, $adreca, $sexe, $adreca_electronica, $dni, $codi_postal){
   require "../Database/connexio.php";
     try {      
@@ -20,6 +31,12 @@ function afegirUsuari($nom, $adreca, $sexe, $adreca_electronica, $dni, $codi_pos
 
 }
 
+/**
+ * obtenirIdUsuari - Obté l'identificador d'un usuari a partir del seu nom. 
+ *
+ * @param  mixed $nom
+ * @return result - Retorna l'identificador de l'usuari.
+ */
 function obtenirIdUsuari($nom){
   require "../Database/connexio.php";
   try{
@@ -33,6 +50,12 @@ function obtenirIdUsuari($nom){
 }
 }
 
+/**
+ * obtenirIdContinent - Obté l'identificador d'un continent a partir del seu nom. 
+ *
+ * @param  mixed $continent
+ * @return result - Retorna l'identificador del continent.
+ */
 function obtenirIdContinent($continent){
   require "../Database/connexio.php";
   try{
@@ -46,6 +69,12 @@ function obtenirIdContinent($continent){
   }
 }
 
+/**
+ * obtenirIdCiutat - Obté l'identificador d'una ciutat a partir del seu nom.
+ *
+ * @param  mixed $ciutat
+ * @return result - Retorna l'identificador de la ciutat.
+ */
 function obtenirIdCiutat($ciutat){
   require "../Database/connexio.php";
   try{
@@ -60,6 +89,17 @@ function obtenirIdCiutat($ciutat){
 }
 
 
+/**
+ * afegirReserva - Afegeix una reserva a la base de dades a partir dels paràmetres que rep de la vista (formulari). 
+ *
+ * @param  mixed $nom
+ * @param  mixed $continent
+ * @param  mixed $ciutat
+ * @param  mixed $data
+ * @param  mixed $numPersones
+ * @param  mixed $preu
+ * @return void
+ */
 function afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu){
   require "../Database/connexio.php";
   $usuari_id = obtenirIdUsuari($nom);
