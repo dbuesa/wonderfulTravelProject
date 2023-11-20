@@ -18,7 +18,7 @@ $preu = netejarData($_POST['preu']);
 
 
 afegirUsuari($nom, $adreca, $sexe, $adreca_electronica, $dni, $codi_postal);
-afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu);
+afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu, $dni);
 enviarMail($adreca_electronica);
 
 ?>      

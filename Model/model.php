@@ -100,9 +100,9 @@ function obtenirIdCiutat($ciutat){
  * @param  mixed $preu
  * @return void
  */
-function afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu){
+function afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu, $dni){
   require "../Database/connexio.php";
-  $usuari_id = obtenirIdUsuari($nom);
+  $usuari_id = obtenirIdUsuari($dni);
   $continent_id = obtenirIdContinent($continent);
   $ciutat_id = obtenirIdCiutat($ciutat);
   try{
