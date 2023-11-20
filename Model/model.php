@@ -37,11 +37,11 @@ function afegirUsuari($nom, $adreca, $sexe, $adreca_electronica, $dni, $codi_pos
  * @param  mixed $nom
  * @return result - Retorna l'identificador de l'usuari.
  */
-function obtenirIdUsuari($nom){
+function obtenirIdUsuari($dni){
   require "../Database/connexio.php";
   try{
-    $stmt = $conn->prepare("SELECT usuari_id FROM usuaris WHERE nom = ?");
-    $stmt->bindParam(1, $nom);
+    $stmt = $conn->prepare("SELECT usuari_id FROM usuaris WHERE dni = ?");
+    $stmt->bindParam(1, $dni);
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result['usuari_id'];
