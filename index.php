@@ -41,7 +41,7 @@
       <div class="data-field">
         <label for="data">Data:</label>
         <input type="date" id="data" name="data" required min=<?php $avui=date("Y-m-d"); echo $avui;?> >
-        <p style="font-size: x-small; color: red;">Les vacances son de 7 DIES</p>
+        <p style="font-size: x-small; color: red;">L'estada romandrà 7 DIES</p>
       </div>
 
       <div class="data-field">
