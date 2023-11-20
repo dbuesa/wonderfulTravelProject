@@ -22,6 +22,23 @@ function validarCorreu(correu) {
     return regex.test(correu);
 }
 
+function validarDesti(desti)
+{
+    if(desti == "continent"){
+        return false;
+    }else{
+        return true;
+    }
+}
+function validarSexe(sexe)
+{
+    if(sexe == "Helicoptero"){
+        return false;
+    }else{
+        return true;
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     form.addEventListener("submit", function (event) {
@@ -32,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const nom = document.getElementById("nom").value;
         const cp = document.getElementById("cp").value;
         const correu = document.getElementById("correu").value;
+        const desti = document.getElementById("desti").value;
+        const sexe = document.getElementById("sexe").value;
 
         if (!validarDNI(dni)) {
             errors.push("Format de DNI incorrecte");
@@ -45,9 +64,16 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!validarCorreu(correu)) {
             errors.push("Correu electrònic incorrecte");
         }
+        if(!validarDesti(desti)){
+            errors.push("Has de seleccionar un continent");
+        }
+        if(!validarSexe(sexe)){
+            errors.push("Indica el teu sexe, si us plau");
+        }
         if (errors.length > 0) {
             mostrarErrors();
-        } else {
+        }
+        else {
             form.submit();
         }
     });
