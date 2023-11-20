@@ -114,4 +114,9 @@ input[type="reset"]:hover {
   display: inline-block;
   vertical-align: top;
   border-radius: 0.5cm;
+  transition: transform 0.3s;
+}
+
+#imatge:hover {
+  transform: scale(1.1);
 }
