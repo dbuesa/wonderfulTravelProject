@@ -21,4 +21,5 @@ afegirUsuari($nom, $adreca, $sexe, $adreca_electronica, $dni, $codi_postal);
 afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu, $dni);
 enviarMail($adreca_electronica);
 
+include "Vista/reserva_exit.php";
 ?>      
