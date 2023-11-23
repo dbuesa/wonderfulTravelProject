@@ -24,7 +24,7 @@ function afegirUsuari($nom, $adreca, $sexe, $adreca_electronica, $dni, $codi_pos
         $stmt->execute();
         
       } catch(PDOException $e) {
-        $msg[]=  "Error: " . $e->getMessage();
+        throw new Exception("Error al afegir usuari: " . $e->getMessage());
     }
         
     $conn = null;
@@ -46,7 +46,7 @@ function obtenirIdUsuari($dni){
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result['usuari_id'];
   } catch(PDOException $e) {
-    echo  "Error: " . $e->getMessage();
+    throw new Exception("Error al afegri reserva: " . $e->getMessage());
 }
 }
 
@@ -118,6 +118,50 @@ function afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu, $d
     echo  "Error: " . $e->getMessage();
   }
 
+}
+/**
+ * comprovarMailExisteix - Comprova si l'adreça electrònica de l'usuari ja existeix a la base de dades. 
+ * 
+ * @param  mixed $adreca_electronica - Adreça electrònica de l'usuari.
+ * @return boolean - Retorna true si l'adreça electrònica ja existeix a la base de dades, false si no existeix.
+ */
+function comprovarMailExisteix($adreca_electronica){
+  require "../Database/connexio.php";
+  try{
+    $stmt = $conn->prepare("SELECT * FROM usuaris WHERE adreca_electronica = ?");
+    $stmt->bindParam(1, $adreca_electronica);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    if($result){
+      return true;
+    } else {
+      return false;
+    }
+  } catch(PDOException $e) {
+    echo  "Error: " . $e->getMessage();
+  }
+}
+/**
+ * comprovarDniExisteix - Comprova si el DNI de l'usuari ja existeix a la base de dades. 
+ *
+ * @param  mixed $dni - DNI de l'usuari.
+ * @return boolean - Retorna true si el DNI ja existeix a la base de dades, false si no existeix.
+ */
+function comprovarDniExisteix($dni){
+  require "../Database/connexio.php";
+  try{
+    $stmt = $conn->prepare("SELECT * FROM usuaris WHERE dni = ?");
+    $stmt->bindParam(1, $dni);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    if($result){
+      return true;
+    } else {
+      return false;
+    }
+  } catch(PDOException $e) {
+    echo  "Error: " . $e->getMessage();
+  }
 }
 
 ?>

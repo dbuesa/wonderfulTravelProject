@@ -17,9 +17,30 @@ $numPersones = netejarData($_POST['numPersones']);
 $preu = netejarData($_POST['preu']);
 
 
-if(afegirUsuari($nom, $adreca, $sexe, $adreca_electronica, $dni, $codi_postal) && afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu, $dni)){
+session_start();
+$_SESSION['dadesReserva'] = [
+    'nom' => $nom,
+    'adreca' => $adreca,
+    'sexe' => $sexe,
+    'adreca_electronica' => $adreca_electronica,
+    'dni' => $dni,
+    'codi_postal' => $codi_postal,
+    'continent' => $continent,
+    'ciutat' => $ciutat,
+    'data' => $data,
+    'numPersones' => $numPersones,
+    'preu' => $preu
+];
+
+
+if(comprovarMailExisteix($adreca_electronica) || comprovarDniExisteix($dni)){
+    afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu, $dni);
+    enviarMail($adreca_electronica);
+} else {
+    afegirUsuari($nom, $adreca, $sexe, $adreca_electronica, $dni, $codi_postal);
+    afegirReserva($nom, $continent, $ciutat, $data, $numPersones, $preu, $dni);
     enviarMail($adreca_electronica);
 }
 
-include_once "../Vista/reserva_exit.php";
+include "../Vista/reserva_exit.php";
 ?>      
