@@ -45,9 +45,9 @@ export const preus = {
 }
 
 export const continents = {
-    "europa": ["Praga", "Madrid", "Amsterdam", "Atenas"],
-    "africa": ['Kampala', 'Abuja', 'Brazzaville', 'Algeria'],
-    "america": ['Rio de Janeiro', 'Buenos Aires', 'Bogotà', 'Cusco'],
-    "oceania": ['Sydney', 'Wellington', 'Wagga Wagga', 'Hobart'],
-    "asia": ['Dacca', 'Hong Kong', 'Jakarta', 'Canton']
+    "Europa": ["Praga", "Madrid", "Amsterdam", "Atenas"],
+    "Africa": ['Kampala', 'Abuja', 'Brazzaville', 'Algeria'],
+    "America": ['Rio de Janeiro', 'Buenos Aires', 'Bogotà', 'Cusco'],
+    "Oceania": ['Sydney', 'Wellington', 'Wagga Wagga', 'Hobart'],
+    "Asia": ['Dacca', 'Hong Kong', 'Jakarta', 'Canton']
 }

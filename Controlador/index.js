@@ -2,6 +2,7 @@ import { imatges } from "./export.js";
 import { preus } from "./export.js";
 import { continents } from "./export.js";
 
+
 const descompte = 0.15;
 
 document.getElementById("desti").addEventListener("change", carregarContinents);
@@ -29,7 +30,7 @@ function carregarContinents(){
 function mostrarCiutats(ciutats) {
     let ciutatsSelect = document.getElementById("ciutat");
     ciutatsSelect.innerHTML = "";
-    for (let i = 0; i < ciutats.length; i++) {
+    for (let i = 0; i < ciutats.length; ++i) {
         let option = document.createElement("option");
         option.text = ciutats[i];
         ciutatsSelect.add(option);

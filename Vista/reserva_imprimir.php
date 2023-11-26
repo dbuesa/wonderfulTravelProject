@@ -14,23 +14,23 @@
     ?>
     <table>
     <h1>Wonderful travel</h1>
-    <h2>Su billete e itinerario</h2>
-    <p><b>Datos del pasajero</b></p>
+    <h2>El seu bitllet i itinerari</h2>
+    <p><b>Dades del passatger</b></p>
     <div class="left">
-    <label><b>Nombre del pasajero</b></label>
+    <label><b>Nom del passatger</b></label>
     <p><?php echo $dadesResrva['nom']?></p>
     <hr>
     <p><b>Sexe</b></p>
     <p><?php echo $dadesResrva['sexe']; ?></p>
     <hr>
     </div>
-    <label><b>Correu electronic</b></label>
+    <label><b>Correu electrònic</b></label>
     <p><?php echo $dadesResrva['adreca_electronica']; ?></p>
     <hr>
-    <p><b>Documento de identidad</b></p>
+    <p><b>Document d'identitat(NIF)</b></p>
     <p><?php echo $dadesResrva['dni']; ?></p>
     <hr>
-    <p><b>Datos del pasajero</b></p>
+    <p><b>Dades del viatge</b></p>
     <div class="left">
     <label><b>Origen</b></label>
     <p><?php echo "Europa/ Espanya"?></p>
@@ -40,13 +40,13 @@
     <hr>
     </div>
     <label><b>Destí</b></label>
-    <p><?php echo $dadesResrva['continent'] . '/ ' . $dadesResrva['ciutat']?></p>
+    <p><?php echo $dadesResrva['continent'] . ' / ' . $dadesResrva['ciutat']?></p>
     <hr>
     <p><b>Data inici</b></p>
     <p><?php echo $dadesResrva['data']; ?></p>
     <hr>
-    <p>Moltes Gracies per contractar el vostre vol amb nosaltres</p>
-    <p>Torna a contractar els vostres vols amb nosaltres a <a href="../index.php">www.wonderfultravel.cat</a></p>
+    <p>Moltes gràcies per contractar el vostre vol amb nosaltres</p>
+    <p>Torna a contractar els nostres destís a <a href="../index.php">www.wonderfultravel.cat</a></p>
     </table>
 </body>
 </html>
