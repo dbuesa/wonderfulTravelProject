@@ -4,7 +4,24 @@ let errors = []; // Declarar la variable en el ámbito global
 
 function validarDNI(dni) {
     let regex = /^\d{8}[a-zA-Z]$/;
-    return regex.test(dni);
+    if (regex.test(dni)) {
+        let numero = dni.substr(0, dni.length - 1);
+        let lletra = dni.substr(dni.length - 1, 1);
+        numero = numero % 23;
+        let lletres = 'TRWAGMYFPDXBNJZSQVHLCKET';
+        lletra = lletres.substring(numero, numero + 1);
+        if (lletra != lletra.toUpperCase()) {
+            errors.push("Lletra del DNI errònia");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    else {
+        errors.push("Format de DNI incorrecte");
+        return false;
+    }
 }
 
 function validarNom(nom) {
