@@ -48,11 +48,11 @@
         <label for="desti">Destí:</label>
         <select name="desti" id="desti">
           <option value="continent" disabled selected>Selecciona un continent</option>
-          <option value="europa">Europa</option>
-          <option value="africa">Àfrica</option>
-          <option value="america">Amèrica</option>
-          <option value="oceania">Oceania</option>
-          <option value="asia">Àsia</option>
+          <option value="Europa">Europa</option>
+          <option value="Africa">Àfrica</option>
+          <option value="America">Amèrica</option>
+          <option value="Oceania">Oceania</option>
+          <option value="Asia">Àsia</option>
         </select>
       </div>
 
