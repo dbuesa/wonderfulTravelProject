@@ -11,16 +11,11 @@ function validarDNI(dni) {
         let lletres = 'TRWAGMYFPDXBNJZSQVHLCKET';
         lletra = lletres.substring(numero, numero + 1);
         if (lletra != lletra.toUpperCase()) {
-            errors.push("Lletra del DNI errònia");
             return false;
         }
         else {
             return true;
         }
-    }
-    else {
-        errors.push("Format de DNI incorrecte");
-        return false;
     }
 }
 
