@@ -88,7 +88,6 @@ function enviarMail($email){
             <p>' . $dadesResrva['data'] . '</p>
             <hr>
             <p>Moltes gràcies per contractar el vostre vol amb nosaltres</p>
-            <p>Torna a contractar els nostres destís a <a href="../index.php">www.wonderfultravel.cat</a></p>
         </table>
     </body>
     </html>';

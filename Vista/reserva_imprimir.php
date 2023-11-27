@@ -33,7 +33,7 @@
     <p><b>Dades del viatge</b></p>
     <div class="left">
     <label><b>Origen</b></label>
-    <p><?php echo "Europa/ Espanya"?></p>
+    <p><?php echo "Europa / Espanya"?></p>
     <hr>
     <p><b>Preu</b></p>
     <p><?php echo $dadesResrva['preu']; ?></p>
