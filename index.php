@@ -12,11 +12,13 @@
 </head>
 
 <body>
+  <div id="data" class="datahora"></div><br><br>
+  <h2 style="text-align: center;">Wonderful Travel
   <div class="clock">
     <svg class="circle" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <circle cx="60" cy="60" r="60" />
-      <line x1="60" y1="0" x2="60" y2="60" class="hours" />
-      <line x1="60" y1="0" x2="60" y2="60" class="minutes" />
+      <line x1="60" y1="15" x2="60" y2="60" class="hours" />
+      <line x1="60" y1="5" x2="60" y2="60" class="minutes" />
       <line x1="60" y1="0" x2="60" y2="60" class="seconds" />
       <line x1="60" y1="5" x2="60" y2="10" class="line" />
       <line x1="60" y1="5" x2="60" y2="10" class="line" />
@@ -30,11 +32,8 @@
       <line x1="60" y1="5" x2="60" y2="10" class="line" />
       <line x1="60" y1="5" x2="60" y2="10" class="line" />
       <line x1="60" y1="5" x2="60" y2="10" class="line" />
-
     </svg>
-  </div>
-  <div id="data" class="datahora"></div><br><br>
-  <h2 style="text-align: center;">Wonderful Travel</h2>
+  </div></h2>
 
   <form action="Controlador/controlador.php" method="POST">
     <div class="form-inline">

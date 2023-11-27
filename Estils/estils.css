@@ -32,9 +32,6 @@ stroke: white;
   stroke-linecap: round;
   transform-origin: center;
 }
-
-
-
 body {
   background-color: #ffffff; 
   color: #000000; 
@@ -119,8 +116,4 @@ input[type="reset"]:hover {
 
 #imatge:hover {
   transform: scale(1.12);
-}
-div#error-container{
-  text-align: center;
-  list-style: none;
 }
